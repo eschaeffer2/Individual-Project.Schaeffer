@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition  v 1.16
+     
+
+      Individual Project Template
+  
+      Author: Eric Schaeffer
+      Date:   2/13/2017
+
+      Filename: page 1.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0">
+   <title>Individual Student Project Template 1</title>
+   <link rel="stylesheet"  href="compinfo.css" />   <!-- created a seperate css page to display the computer info. -->
+   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css"> 
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1>
+            <img src="https://cdn.gomix.com/dfdc59d3-0000-4ff4-85c8-b8e3602dccbd%2FSU%20Lax%20Logo.png" width= "220" height= "220" />  <!-- Salisbury Mens Lacrosse photo -->
+         </h1>
+      </header>
+
+	 <!--
+      The nav section (below) contains and unordered list <ul>.
+      Each individual page is listed as a separate line item <li>.
+      Note that the first two line items have been given a unique ID attribute value and an "href"
+      which is a hypertext reference.  You will need to create two additional .htm files and references 
+      for the other tabs to work.   
+	-->  
+	  <nav>
+ 
+	    <ul>
+            <li id="page1"><a href="/index.html">Home</a></li>
+            <li id="page2"><a href="/page2.html">About</a></li>
+            <li id="page3"><a href="/page3.html">Shop</a></li>
+            <li id="page4"><a href="/page4.html">Team</a></li>  
+            <li id="currentpage"><a href="/page5.html">Computer Info</a></li>  <!-- id for page 5. as well as links to the other pages on the website. -->
+		</ul>
+      </nav>
+ 	 <!--
+      The heading and paragraph tags below are "placeholders for your own content".
+	-->         
+      <article>
+         <h2>Computer Properties</h2>  <!-- Changed page article header and added content to desription paragraphs. -->
+         <p></p><br/>
+         <p></p><br/>
+         <p></p><br/>
+         <p></p><br/>
+         <p></p><br/>
+      </article>
+     
+     <!-- The information for safe and secure browsing alsong with links to external websites. -->
+     <article>
+       <h2>Web Security</h2>
+       <p>
+         Using the web safely and securly is very important and most people are undereducated on how to do so. Some knowledge on the the risks out there and how to avoid them can help one safely browse the web.
+       </p><br/>
+       <p>
+         1) Information on what to do to avoid internet threats and viruses. <a href="https://us.norton.com/yoursecurityresource/detail.jsp?aid=web_browser_security">Click here for more</a>
+       </p><br/>
+       <p>
+         2) Examples of certain security risks on the web. <a href="http://www.itscolumn.com/2012/03/28-types-of-computer-security-threats-and-risks/">Click here for more</a>
+       </p><br/>
+       <p>
+         3) Anti-virus options you can use to protect your computer and yourself. <a href="https://www.top10bestantivirus.com/best-spyware-removal">Click here for more</a>
+       </p>
+     </article>
+    
+      <footer>
+         <p>Salisbury University &bull; Salisbury, Maryland</p> <!-- Changed bottom info bar -->
+      </footer>
+   </div>
+   
+  <!-- Script statements for the computer properties to be displayed -->
+  <script>
+    "use strict";
+  document.getElementsByTagName("p")[0].innerHTML = "Web browser name:   "   + navigator.appName;
+  document.getElementsByTagName("p")[1].innerHTML = "Web browser version:   "   + navigator.appVersion;
+  document.getElementsByTagName("p")[2].innerHTML = "Operating platform:   "   + navigator.platform;
+  document.getElementsByTagName("p")[3].innerHTML = "User agent:   "   + navigator.userAgent;
+  document.getElementsByTagName("p")[4].innerHTML = "Connection:   "   + navigator.onLine;  
+  </script>
+</body>
+</html>
